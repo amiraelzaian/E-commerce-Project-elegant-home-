@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>shop</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- main bar-->
+      <div class="main-bar">
+        <div class="logo">
+          <img src="imgs/logo.png" alt="LOGO" decoding="async" />
+        </div>
+
+        <div class="search">
+          <input class="search-input" type="search" placeholder="search" />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="right-list">
+          <i class="fas fa-bars"></i>
+          <ul>
+            <i class="fas fa-times"></i>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="cart.html"> My Cart</a></li>
+            <li><a href="#product-section">Products</a></li>
+            <li><a href="cart.html"> Paying</a></li>
+            <li id="newAcc">New Account</li>
+            <li id="logout">Logout</li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <!--end of main bar-->
+      <!--start of welcom part-->
+      <div class="welcome">
+        <div class="imgs">
+          <img id="img1" src="imgs/img3.jpg" alt="" />
+          <img id="img2" src="imgs/img2.jpg" alt="" />
+          <img id="img5" src="imgs/img6.jpg" alt="" />
+          <img id="img3" src="imgs/img1.jpg" alt="" />
+          <img id="img4" src="imgs/img4.jpg" alt="" />
+        </div>
+        <div class="home-text">
+          <h1></h1>
+          <p></p>
+        </div>
+      </div>
+      <!--end of welcom part-->
+      <!--best selling-->
+      <div class="best-selling">
+        <h2 class="header">Best Selling Products</h2>
+        <div class="wrapper">
+          <div class="slider">
+            <div class="img-product">
+              <img src="imgs/img1.jpg" alt="" />
+              <p class="">Salon s12</p>
+            </div>
+            <div class="img-product">
+              <img src="imgs/img2.jpg" alt="" />
+              <p class="">Salon s33</p>
+            </div>
+            <div class="img-product">
+              <img src="imgs/img3.jpg" alt="" />
+              <p class="">Salon s34</p>
+            </div>
+            <div class="img-product">
+              <img src="imgs/img4.jpg" alt="" />
+              <p class="">Living l2</p>
+            </div>
+            <div class="img-product">
+              <img src="imgs/img6.jpg" alt="" />
+              <p class="">Living L1</p>
+            </div>
+
+            <div class="controls">
+              <button class="left">
+                <i class="fa-solid fa-angles-left"></i>
+              </button>
+              <button class="right">
+                <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end of best selling-->
+      <!--begin of products part-->
+      <div class="admin-panel" tyle="display: none;">
+        <div class="panel-wrapper">
+          <div class="header">Add To Stock</div>
+          <form id="product-form">
+            <input
+              type="text"
+              name="title"
+              placeholder="Product Name"
+              required
+            />
+            <input type="number" name="price" placeholder="Price" required />
+            <input type="number" name="stock" placeholder="Stock" required />
+            <label for="fileUpload" class="upload-btn">Upload Image</label>
+            <input
+              type="file"
+              id="fileUpload"
+              name="image"
+              accept="image/*"
+              hidden
+            />
+            <button type="submit">Add Product</button>
+          </form>
+        </div>
+      </div>
+      <div class="products-section" id="product-section">
+        <h1 class="products-heading header">Products</h1>
+
+        <div class="products-wrapper"></div>
+      </div>
+
+      <!--end of products part-->
+      <!-- begin footer-->
+      <footer>
+        <div class="dev">Developed by: Amira Alzaian</div>
+        <div class="contact">
+          <a href="https://www.facebook.com/share/19XrVAj89z/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/amira-alzaian-0323902a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="copy-write">&copy; 2025 Elegant Home</div>
+      </footer>
+      <!-- end footer-->
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/log.js"></script>
+  </body>
+</html>

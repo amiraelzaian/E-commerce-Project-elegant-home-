@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* :root {
+} */
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("/imgs/img6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Lora", serif;
+}
+/*singup style*/
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ca826855;
+  z-index: 1;
+}
+
+.signup-wrapper,
+.signin-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px -7px 45px 1px #ca8268;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.header h1 {
+  color: #510201;
+  letter-spacing: 4px;
+}
+.username,
+.email,
+.pass {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+label {
+  color: #110400;
+  font-size: 18px;
+  font-weight: bold;
+  width: 30%;
+}
+.signup-wrapper input,
+.signin-wrapper input {
+  outline: none;
+  border: 2px solid #785615;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  box-shadow: 1px 1px 8px #c29979;
+}
+.signup-wrapper input:hover,
+.signin-wrapper input:hover,
+.signup-wrapper button[type="submit"]:hover,
+.signin-wrapper button[type="submit"]:hover {
+  border: 2px solid #510201;
+}
+
+.signup-wrapper button[type="submit"]:hover,
+.signin-wrapper button[type="submit"]:hover {
+  color: white;
+  background-color: #510201;
+}
+.signup-wrapper button[type="submit"],
+.signin-wrapper button[type="submit"] {
+  margin: 10px auto;
+  width: 30%;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #110400;
+  border: 2px solid #795615;
+  box-shadow: 1px 1px 8px #c29979;
+  background-color: #f1d3a7;
+}
+
+.down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.down a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/*responsive*/
+/* Responsive for phones */
+@media (max-width: 480px) {
+  .signup-wrapper,
+  .signin-wrapper {
+    width: 350px;
+    input {
+      width: 70%;
+    }
+    label {
+      font-size: 15px;
+      width: 20%;
+    }
+  }
+}
